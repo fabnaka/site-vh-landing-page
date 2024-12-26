@@ -44,13 +44,13 @@ export class HomeComponent implements OnInit {
 
   artistas_array: any[] = [
     { nome: 'VH', foto: './../../../assets/images/artistas/vh.jpg' },
-    { nome: 'PEDRO CORREA', foto: './../../../assets/images/artistas/pedro1.jpg' },
+    { nome: 'JAY JENNER', foto: './../../../assets/images/artistas/jay.jpg' },
     { nome: 'KAROL ALONSO', foto: './../../../assets/images/artistas/karol1.jpg' },
-    { nome: 'PADOVA', foto: './../../../assets/images/artistas/vh.jpg' },
+    { nome: 'PADOVA', foto: './../../../assets/images/artistas/padova.jpg' },
     //{ nome: 'LOREN', foto: './../../../assets/images/artistas/vh.jpg' },
     //{ nome: 'KRONE', foto: './../../../assets/images/artistas/vh.jpg' },
+    { nome: 'PEDRO CORREA', foto: './../../../assets/images/artistas/pedro1.jpg' },
     { nome: 'GNESIS', foto: './../../../assets/images/artistas/gnesis.jpg' },
-    { nome: 'JAY JENNER', foto: './../../../assets/images/artistas/jay.jpg' },
     //{ nome: 'IRIS', foto: './../../../assets/images/artistas/vh.jpg' },
   ];
 
