@@ -1,0 +1,72 @@
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 64px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.home-image-background {
+    height: 100vh;
+    background-image: url('./../../../assets/images/home/rock.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.overlay-text-1 {
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    animation: fadeInMoveRight 1.5s ease-out forwards;
+}
+
+.overlay-text-2{
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    margin-top: 20px;
+    animation: fadeInMoveRight 2.5s ease-out forwards;
+}
+
+.overlay-buttom-3{
+    animation: fadeInMoveRight 2.8s ease-out forwards;
+    background: linear-gradient(135deg, #2D0C34, #6E44A9); /* Gradiente de fundo */
+    border: none; /* Remove a borda padrão */
+    color: #fff; /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho do texto */
+    font-weight: bold; /* Negrito no texto */
+    font-family: 'play',sans-serif;
+    padding: 15px 30px; /* Espaçamento interno */
+    cursor: pointer; /* Altera o cursor para indicar clicável */
+    margin-top: 20px;
+    //text-transform: uppercase; /* Texto em maiúsculas */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease; /* Transição suave para hover */
+}
+
+.grid {
+    margin-right: 0;
+}
+
+@keyframes fadeInMoveRight {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+:host ::ng-deep .custom .p-inputtext { 
+    width: 100%; 
+} 

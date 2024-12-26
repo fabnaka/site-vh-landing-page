@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/animate.css/animate.min.css";
+
+body {
+    font-family: 'play',sans-serif;
+    font-size: 16px; /* Tamanho de fonte padrão */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamanho do título 1 */
+    font-weight: 700; /* Negrito */
+    //margin: 1.5rem 0; /* Margem vertical */
+}
+
+h2 {
+    font-size: 2rem; /* Tamanho do título 2 */
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+h3 {
+    font-size: 1.75rem; /* Tamanho do título 3 */
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+p {
+    font-size: 1.2rem; /* Tamanho do parágrafo */
+}

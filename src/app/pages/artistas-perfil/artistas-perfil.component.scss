@@ -1,0 +1,15 @@
+p{
+    font: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.home-image-background {
+    //width: 100%; /* Largura 100% da tela */
+    height: 70vh; /* Altura igual à altura da viewport */
+    background-image: url('./../../../assets/images/solucoes/3.jpg');
+    background-size: cover; /* Cobre toda a área, mantendo a proporção */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed;
+}

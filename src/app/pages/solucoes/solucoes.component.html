@@ -1,0 +1,211 @@
+<div class="animate__animated animate__fadeIn">
+    <div class="home-image-background">
+        <div class="overlay-text">SOLUÇÕES</div>
+    </div>
+    <div class="grid">
+        <div class="col-12 md:col-12 lg:col-12">
+            <div class="grid" style="margin-top: 20px; padding: 30px;">
+                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10">
+                    <div class="grid">
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
+                            <p-image src="./../../../assets/images/home-carrosel/3.jpg" alt="Image" width="100%"
+                                height="100%" />
+                        </div>
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
+                            <div class="grid" style="height: 100%;">
+                                <div class="col-12 md:col-12 lg:col-12" style="text-align: justify;">
+                                    <p style="font-weight: bold;">PRIVADOS</p>
+                                    <br>
+                                    <p>Sorrisos e risadas. A alegria estampada no rosto dos seus convidados é a verdadeira
+                                        expressão
+                                        de que
+                                        todos estão gostando do que estão vivenciando.</p>
+                                    <br>
+                                    <p> Seja para Aniversários, Pré/Pós Wedding ou Formatura, queremos que você aproveite o
+                                        seu dia,
+                                        sendo
+                                        leve e tudo nos conformes como tenha imaginado, sem ter nenhuma preocupação com a
+                                        infraestutura e
+                                        experiências que você deseja causar em seus convidados.</p>
+                                    <br>
+                                    <p> Sonorização, Cenografia, Decoração, Iluminação, Artistas (DJs, Pop Rock, Sertanejo e
+                                        Pagode),
+                                        Equipamentos Interativos (Spin 360°, Espelho Mágico, Oculus VR), Foto e Vídeo
+                                        (Captação e
+                                        Edição),
+                                        Produção de Palco, Videomapping, Back Office (Churrasqueiro e Limpeza).Você é o
+                                        Anfitrião.
+                                        Nós
+                                        cuidamos pra você.</p>
+                                </div>
+                                <div class="col-12 md:col-12 lg:col-12" class="container">
+                                    <a routerLink="/artistas" class="p-button font-bold"
+                                        style="width: 100%; height: 50px;background: #2d0c34;">
+                                        <p style="width: 100%;">Entre em Contato</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10" style="margin-top: 30px; padding-left: 10px;">
+                    <p-carousel [value]="servicos" [numVisible]="5" [numScroll]="2" [circular]="true"
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
+                        <ng-template let-servico pTemplate="item">
+                            <div class="relative mx-auto">
+                                <img src="{{servico.image}}" [alt]="servico.name" class="border-round" width="250"
+                                    height="250" />
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+    
+                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10" style="margin-top: 60px;">
+                    <div class="grid" >
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
+                            <div class="grid" style="height: 100%;">
+                                <div class="col-12 md:col-12 lg:col-12" style="text-align: justify;">
+                                    <p style="font-weight: bold;">CORPORATIVOS</p>
+                                    <br>
+                                    <p>A sua imagem e comunicação é o que você deseja que os outros entendam o por quê de
+                                        estarem ali. O primeiro encontro é com a cara do seu evento. Você comunica, nós
+                                        cuidamos da sua voz.</p>
+                                    <br>
+                                    <p> Seja In-Loco, Datas Comemorativas, Palestras, Happy hour, ou para qualquer lugar via
+                                        <b>Streaming</b>.
+                                    </p>
+                                    <br>
+                                    <p> Sonorização, Cenografia, Decoração, Iluminação, Cenografia, Equipamentos
+                                        (Microfones, Mesa de Som, Câmeras, Live Station), Live Streaming (Zoom, YouTube,
+                                        Twitch, Instagram e TikTok), Equipamentos Interativos (Spin 360°, Espelho Mágico,
+                                        Oculus VR), Foto e Vídeo (Captação e Edição), Produção de Palco, Videomapping,
+                                        Artistas (DJ’s, Pop Rock, Sertanejo e Pagode), Execução de Projeto de Label e
+                                        Consultoria para Produção de Evento estão disponíveis.</p>
+                                </div>
+                                <div class="col-12 md:col-12 lg:col-12" class="container">
+                                    <a routerLink="/artistas" class="p-button font-bold"
+                                        style="width: 100%; background: #2d0c34;height: 50px;">
+                                        <p style="width: 100%;">Entre em Contato</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
+                            <p-image src="./../../../assets/images/home-carrosel/3.jpg" alt="Image" width="100%"
+                                height="100%" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10" style="margin-top: 30px;">
+                    <p-carousel [value]="servicos" [numVisible]="5" [numScroll]="2" [circular]="true"
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
+                        <ng-template let-servico pTemplate="item">
+                            <div class="relative mx-auto">
+                                <img src="{{servico.image}}" [alt]="servico.name" class="border-round" width="250"
+                                    height="250" />
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+    
+                <div class="col-12 md:col-10 lg:col-10 md:col-offset-1 lg:col-offset-1" style="margin-top: 60px;">
+                    <div class="grid">
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
+                            <p-image src="./../../../assets/images/home-carrosel/3.jpg" alt="Image" width="100%"
+                                height="100%" />
+                        </div>
+    
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
+                            <div class="grid" style="height: 100%;">
+                                <div class="col-12 md:col-12 lg:col-12" style="text-align: justify;">
+                                    <p style="font-weight: bold;">BARES, BALADAS E PRODUÇÕES EVENTUAIS</p>
+                                    <br>
+                                    <p>Dispa-se de tudo que é excesso, simplifique. Cada um dos elementos estão prontos para
+                                        gerar uma profunda experiência.</p>
+                                    <br>
+                                    <p> Público dançando, sorrisos e lembranças sendo criadas pela boa experiência vivida no
+                                        seu local. </p>
+                                    <br>
+                                    <p> Equipamentos (CDJ, Controladora, Som, Microfone, Mesa de Som, Cabeamento), Artistas
+                                        INSTAGE, Curadoria Artística, Residências de Artistas, Contratações Eventuais,
+                                        Sonorização (Mensal ou Eventual), Iluminação, Cenografia, Produção de Label,
+                                        Equipamentos Interativos (Spin 360°, Espelho Mágico, Oculus VR) estão disponíveis
+                                        para atendimento.</p>
+                                </div>
+                                <div class="col-12 md:col-12 lg:col-12" class="container">
+                                    <a routerLink="/artistas" class="p-button font-bold"
+                                        style="width: 100%; background: #2d0c34; height: 50px;">
+                                        <p style="width: 100%;">Entre em Contato</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="col-12 md:col-10 lg:col-10 md:col-offset-1 lg:col-offset-1" style="margin-top: 30px;">
+                    <p-carousel [value]="servicos" [numVisible]="5" [numScroll]="2" [circular]="true"
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
+                        <ng-template let-servico pTemplate="item">
+                            <div class="relative mx-auto">
+                                <img src="{{servico.image}}" [alt]="servico.name" class="border-round" width="250"
+                                    height="250" />
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+    
+                <div class="col-12 md:col-12 lg:col-12" style="margin-top: 60px;">
+                    <div class="grid">
+    
+                        <div class="col-12 md:col-5 lg:col-5 md:col-offset-1 lg:col-offset-1" style="margin: 10px;">
+                            <div class="grid" style="height: 100%;">
+                                <div class="col-12 md:col-12 lg:col-12" style="text-align: justify;">
+                                    <p style="font-weight: bold;">PARA ARTISTAS</p>
+                                    <br>
+                                    <p>Tocar, produzir, cuidar a agenda, receber, procurar contratantes, viajar, estudar as
+                                        músicas e o público. Precisa de ajuda? Estamos aqui.</p>
+                                    <br>
+                                    <p> Temos toda a estrutura de apoio que um Artista precisa. Equipamentos (CDJ,
+                                        Controladora, Som, Microfone, Mesa de Som, Cabeamento) Agenciamento, Booking,
+                                        Contratação Eventual de Staff, Produção de Palco, Administração de Carreira, , Foto
+                                        e Vídeo (Captação e Edição), Criação de Presskit (Fotos e Logomarca) e MediaKit
+                                        (Release e Rider Técnico), Produção Musical e Estúdio para Ensaios. </p>
+                                    <br>
+                                    <p> Conheça os que são INSTAGE!</p>
+                                </div>
+                                <div class="col-12 md:col-12 lg:col-12" class="container">
+                                    <a routerLink="/artistas" class="p-button font-bold"
+                                        style="width: 100%; background: #2d0c34; height: 50px;">
+                                        <p style="width: 100%;">Entre em Contato</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 md:col-5 lg:col-5" style="margin: 10px;">
+                            <p-image src="./../../../assets/images/home-carrosel/3.jpg" alt="Image" width="100%"
+                                height="100%" />
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="col-12 md:col-10 lg:col-10 md:col-offset-1 lg:col-offset-1" style="margin-top: 30px;">
+                    <p-carousel [value]="servicos" [numVisible]="5" [numScroll]="2" [circular]="true"
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
+                        <ng-template let-servico pTemplate="item">
+                            <div class="relative mx-auto">
+                                <img src="{{servico.image}}" [alt]="servico.name" class="border-round" width="250"
+                                    height="250" />
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+            </div>
+        </div>
+</div>

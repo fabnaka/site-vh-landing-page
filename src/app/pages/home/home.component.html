@@ -1,0 +1,170 @@
+<div class="animate__animated animate__fadeIn">
+    <div class="home-image-background">
+        <div class="overlay-text-1">
+            We’re the backstage, the artists, and <br> partygoers of your events. <br>
+            <p class="overlay-text-2">We’re INSTAGE! <br> </p>
+            <!-- <button pButton pRipple label="Entre em contato" class="overlay-buttom-3" (click)="goContato()"></button>-->
+            <button class="overlay-buttom-3" (click)="goContato()">Entre em contato</button>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col-12 md:col-12 lg:col-12">
+            <div class="grid" style="margin-top: 20px;">
+                <div class="col-12 md:col-offset-5 md:col-2 lg:col-offset-5 lg:col-2"
+                    style="text-align: center; padding: 10px; margin-left: 5px;">
+                    <!-- <button pButton pRipple label="Entre em contato" class="p-button-success"
+                        style="width: 100%; height: 50px;" (click)="goContato()"></button> -->
+                </div>
+            </div>
+
+
+            <div class="grid" style="padding: 10px; margin-top: 20px;">
+                <div class="col-12 md:col-12 lg:col-12" style="text-align: center;">
+                    <h1>SOLUÇÕES PARA EVENTOS</h1>
+                </div>
+
+                <div class="col-12 md:col-10 lg:col-10 md:col-offset-1 lg:col-offset-1">
+                    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3"
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false" autoplayInterval="2000">
+                        <ng-template let-product pTemplate="item">
+                            <div class="surface-border border-round m-2 p-3">
+                                <div class="mb-3">
+                                    <div class="relative mx-auto">
+                                        <img src="./../../../assets/images/home-carrosel/{{product.image}}"
+                                            [alt]="product.name" class="w-full border-round" />
+                                    </div>
+                                </div>
+                                <div class="mb-3 font-medium" style="text-align: center;">
+                                    <h5 style="font-weight: bold;">{{ product.name }}</h5>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                    <div class="card">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid" style="margin-top: 10px;" style="padding: 10px;">
+                <div class="col-12 md:col-12 lg:col-12" style="text-align: center;">
+                    <h1>CASTING</h1>
+                </div>
+
+                <div class="col-12 md:col-10 lg:col-10 md:col-offset-1 lg:col-offset-1">
+                    <p-carousel [value]="artistas_array" [numVisible]="3" [numScroll]="1"
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false" autoplayInterval="2000">
+                        <ng-template let-artista pTemplate="item">
+                            <div class=" surface-border border-round m-2 p-3">
+                                <div class="mb-3">
+                                    <div class="relative mx-auto">
+                                        <img src={{artista.foto}} [alt]="artista.nome" class="w-full border-round" />
+                                    </div>
+                                    <div class="mb-3 font-medium" style="text-align: center;">
+                                        <h5 style="font-weight: bold;">{{ artista.nome }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+
+                <div class="col-12 md:col-offset-2 md:col-3 lg:col-offset-2 lg:col-3">
+                    <!-- <a routerLink="/artistas" class="p-button font-bold" style="width: 100%; height: 50px; background: #2d0c34">
+                        <p style="width: 100%;">Conheça todo o Casting!</p>
+                    </a> -->
+                </div>
+
+                <div class="col-12 md:col-offset-1 md:col-3 lg:col-3 lg:col-offset-1">
+                    <!-- <a routerLink="/solucoes" class="p-button font-bold" style="width: 100%; height: 50px; background: #f1790b">
+                        <p style="width: 100%;">Conheça as Soluções para Artistas</p>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="grid" style="margin-top: 40px; padding: 10px;">
+
+                <div class="col-12 md:col-5 lg:col-5 md:col-offset-1 lg:col-offset-1">
+                    <img src="./../../../assets/images/home-carrosel/belive.jpeg" alt="Image"
+                        style="max-width: 100%; height: auto;">
+                    <!-- <div class="card">
+                    </div> -->
+                </div>
+
+                <div class="col-12 md:col-1 lg:col-1" style="font-weight: bold;padding-left: 30px;">
+                    <p>WHAT WE</p>
+                    <p>BELIVE</p>
+                </div>
+
+                <div class="col-12 md:col-4 lg:col-4" style="text-align: justify; hyphens: auto; padding-right: 30px; padding-left: 30px;">
+                    <p>We believe in smiles. Happiness in the face of our and your guests are the true kind of
+                        expression
+                        that all people in the area is enjoying what they are tasting.</p>
+                    <br>
+                    <p>Queremos que você aproveite o seu dia, sendo leve e tudo nos conformes como tenha imaginado, sem
+                        ter
+                        nenhuma preocupação com a infraestutura e experiências que você deseja causar em seus
+                        convidados.
+                    </p>
+                    <br>
+                    <p>Você é o Anfitrião. Nós cuidamos da casa. Muito prazer, nós somos Instage!</p>
+                </div>
+            </div>
+
+            <div class="grid" style="margin-top: 40px; padding: 10px; margin-bottom: 80px;" id="contato">
+                <div class="col-12 md:col-12 lg:col-12" style="text-align: center; margin-bottom: 25px;">
+                    <h1>CONTATO</h1>
+                </div>
+
+                <div class="col-12 md:col-4 lg:col-4 md:col-offset-2 lg:col-offset-2" style="font-weight: bold; padding-left: 30px; margin-bottom: 30px;">
+                    <p style="line-height:2em; font-size: 18px;">
+                        <a href="https://wa.me/5567981280440" style="color: #333333;">
+                            <i class="pi pi-phone" style="font-weight: bold;"></i> +55 67 98128-0440
+                        </a>
+                    </p>
+                    <p style="line-height:2em; font-size: 18px;">
+                        <a href="https://wa.me/5567981280440" style="color: #333333;">
+                            <i class="pi pi-whatsapp" style="font-weight: bold;"></i> +55 67 98128-0440
+                        </a>
+                    </p>
+                    <p style="line-height:2em; font-size: 18px;"> <i class="pi pi-envelope" style="font-weight: bold;"></i>
+                        instage.agency&#64;gmail.com 
+                    </p>
+                </div>
+
+                <div class="col-12 md:col-5 lg:col-5 " style="padding-right: 30px; padding-left: 30px;">
+                    <p-card>
+                        <form [formGroup]="formGroup">
+                            <div class="grid">
+                                <div class="col-12 md:col-12 lg:col-12">
+                                    <label>Nome</label>
+                                    <input style="width: 100%;" type="text" pInputText formControlName="name"
+                                        label="" />
+                                </div>
+                                <!-- <div class="col-12 md:col-12 lg:col-12">
+                                    <label>Número de Celular</label>
+                                    <p-inputMask class="custom" mask="(99) 99999-9999" formControlName="phone" placeholder="(99) 99999-9999" />
+                                </div> -->
+                                <!-- <div class="col-12 md:col-12 lg:col-12">
+                                    <label>Email</label>
+                                    <input style="width: 100%;" type="text" pInputText formControlName="email"/>
+                                </div> -->
+                                <div class="col-12 md:col-12 lg:col-12">
+                                    <label>Messagem</label>
+                                    <textarea rows="5" style="width: 100%;" pInputTextarea formControlName="message"
+                                        [autoResize]="true"></textarea>
+                                </div>
+
+                                <div class="col-12 md:col-12 lg:col-12">
+                                    <button pButton pRipple label="Enviar" style="width: 100%; height: 35px;"
+                                        (click)="enviarEmail()"></button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </p-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
