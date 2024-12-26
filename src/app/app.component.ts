@@ -8,7 +8,7 @@ import { FooterComponent } from './shared/components/footer/footer.component'
   standalone: true,
   imports: [
     RouterOutlet, 
-    //TopBarMenuComponent,
+    TopBarMenuComponent,
     FooterComponent 
   ],
   templateUrl: './app.component.html',

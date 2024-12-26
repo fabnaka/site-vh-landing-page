@@ -43,8 +43,8 @@ export class HomeComponent implements OnInit {
   images: any[] | undefined;
 
   artistas_array: any[] = [
-    { nome: 'VH', foto: './../../../assets/images/artistas/vh.jpg' },
     { nome: 'JAY JENNER', foto: './../../../assets/images/artistas/jay.jpg' },
+    { nome: 'VH', foto: './../../../assets/images/artistas/vh.jpg' },
     { nome: 'KAROL ALONSO', foto: './../../../assets/images/artistas/karol1.jpg' },
     { nome: 'PADOVA', foto: './../../../assets/images/artistas/padova.jpg' },
     //{ nome: 'LOREN', foto: './../../../assets/images/artistas/vh.jpg' },
